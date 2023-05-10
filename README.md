@@ -1,2 +1,2 @@
 # FantasyOfSango_ARClient
- The AR project of FantasyOfSango, it`s now public!
+ The AR project, just a test to use Unity for Digital Twin, it will be private currently.
