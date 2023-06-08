@@ -14,6 +14,7 @@ Material:
   m_ValidKeywords:
   - _CELLSHADING
   - _GGX
+  - _OUTLINE
   - _RENDERENVSETTING
   m_InvalidKeywords:
   - ENABLE_METAL_SPECULAR
@@ -213,7 +214,7 @@ Material:
     - _OcclusionStrength: 0
     - _OtherRimPow: 10
     - _OtherRimSmooth: 0.01
-    - _Outline: 0
+    - _Outline: 1
     - _OutlineWidth: 1
     - _OutlineZOffset: 0.0001
     - _OutlineZOffsetMaskRemapEnd: 1
