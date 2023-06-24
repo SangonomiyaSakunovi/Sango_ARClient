@@ -1,0 +1,151 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mF15A629FA678DFB59710F1F716606C380231BD26 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m9955A30EE112F105E522D2E03413F76FBA717FE3 (void);
+extern void FernPostProcess_AddRenderPasses_mC99B261135751D622C1C11E08E8170F5FB2B9EE3 (void);
+extern void FernPostProcess_Create_mD995E7B8690D48C8974A22C7F12B8E66F9C55894 (void);
+extern void FernPostProcess__ctor_mD12E3BEA072EAD5BDE883C7B2D4F1D537C450A67 (void);
+extern void FernPostProcessRenderPass_get_HasPostProcessRenderers_m634841F5C403D1C4C6FDFB86371A5C3E31286B62 (void);
+extern void FernPostProcessRenderPass__ctor_mF2370833225D0F8817C57E0531DC0587DF42EEEB (void);
+extern void FernPostProcessRenderPass_GetIntermediate_mECAC39A2159A610720B93A9431D1026BAD2A90BC (void);
+extern void FernPostProcessRenderPass_CleanupIntermediate_m273AA91A53CF81598628F19A1ECD1EC8A69BA2E4 (void);
+extern void FernPostProcessRenderPass_Setup_m4E08EE94323223369BF764D41F88F9A52863CD73 (void);
+extern void FernPostProcessRenderPass_OnCameraSetup_mFED381131BE0334BFC05A51E35974CE0857A8EA9 (void);
+extern void FernPostProcessRenderPass_PrepareRenderers_m34A1414065F47C606E015B1D8EE5053744742EA6 (void);
+extern void FernPostProcessRenderPass_Execute_m49637507959E7BD781FEA182E9386ACCEBF62690 (void);
+extern void FernPostProcessRenderer_get_visibleInSceneView_mEF708248FD8EE5BFDC3E276EE1EAC998A4DFBD8C (void);
+extern void FernPostProcessRenderer_get_input_m181B39A7858785E71A340C376347F0FD52108FC7 (void);
+extern void FernPostProcessRenderer_get_Initialized_m3BABDEA0ABB85237FF99F31C1E40184761221174 (void);
+extern void FernPostProcessRenderer_InitializeInternal_mDA1FA2E49C6BE10D4826A69A592B40AA28C85C09 (void);
+extern void FernPostProcessRenderer_Initialize_m01EF80096CF1C90DD25B3276532E74554CCDB142 (void);
+extern void FernPostProcessRenderer_Setup_m67C56CDB6922905F882A4C2BF73880B26AD8305E (void);
+extern void FernPostProcessRenderer_Dispose_m6D7446632460A96AFCC7B20466D9CF20E1C9485D (void);
+extern void FernPostProcessRenderer_Dispose_m5F4CAF492076CBCBF6DC8C15915F4720DEF7F12D (void);
+extern void FernPostProcessRenderer_GetTempRTDescriptor_m72205506F10F481279541B32A2B89B4446C50547 (void);
+extern void FernPostProcessRenderer__ctor_m92C409A4DC4E573C1012F9F78CFB9DF931394656 (void);
+extern void FernPostProcessAttribute_get_Name_mDB6F30A93722F89CE734ECEB8E20562982EF4C78 (void);
+extern void FernPostProcessAttribute_get_InjectionPoint_mD89DC66370D8D293A24C2DA12E4DC8693BFE4BDD (void);
+extern void FernPostProcessAttribute_get_ShareInstance_m48AC4B0940F5410653F62CDD2BACA8111AC0F4EE (void);
+extern void FernPostProcessAttribute__ctor_m83E151DE8567CDFE5C58E4E5DC38937A3CED5BBF (void);
+extern void FernPostProcessAttribute_GetAttribute_m75496FABB4AF731BB771EF04673CC1B790EA912A (void);
+extern void EdgeDetectionOutlineEffect__ctor_mC0B480FA930AF4CC773C1B41E2C048338C1500EA (void);
+extern void EdgeDetectionEffectRenderer_get_visibleInSceneView_m222B9658EBC3966CE820F0347B6A022A2CA33F36 (void);
+extern void EdgeDetectionEffectRenderer_get_input_m7CFC38811244C7F44B0052FB5142966F5C78ED52 (void);
+extern void EdgeDetectionEffectRenderer_Initialize_m0CA2FC6CE622E1D851F0242121F5C3731822C884 (void);
+extern void EdgeDetectionEffectRenderer_Setup_m3498412627696D0F0350BEC8C65A2E22E652AD90 (void);
+extern void EdgeDetectionEffectRenderer_Render_m38F95012E5899DBB95418C59944EDF369D3F59B0 (void);
+extern void EdgeDetectionEffectRenderer__ctor_m721467324745BD5BE134613F8D76F01CED70EF65 (void);
+extern void ShaderIDs__cctor_m439916B80C4E33749854EF77FD8270907F91A15D (void);
+static Il2CppMethodPointer s_methodPointers[37] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mF15A629FA678DFB59710F1F716606C380231BD26,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m9955A30EE112F105E522D2E03413F76FBA717FE3,
+	FernPostProcess_AddRenderPasses_mC99B261135751D622C1C11E08E8170F5FB2B9EE3,
+	FernPostProcess_Create_mD995E7B8690D48C8974A22C7F12B8E66F9C55894,
+	FernPostProcess__ctor_mD12E3BEA072EAD5BDE883C7B2D4F1D537C450A67,
+	FernPostProcessRenderPass_get_HasPostProcessRenderers_m634841F5C403D1C4C6FDFB86371A5C3E31286B62,
+	FernPostProcessRenderPass__ctor_mF2370833225D0F8817C57E0531DC0587DF42EEEB,
+	FernPostProcessRenderPass_GetIntermediate_mECAC39A2159A610720B93A9431D1026BAD2A90BC,
+	FernPostProcessRenderPass_CleanupIntermediate_m273AA91A53CF81598628F19A1ECD1EC8A69BA2E4,
+	FernPostProcessRenderPass_Setup_m4E08EE94323223369BF764D41F88F9A52863CD73,
+	FernPostProcessRenderPass_OnCameraSetup_mFED381131BE0334BFC05A51E35974CE0857A8EA9,
+	FernPostProcessRenderPass_PrepareRenderers_m34A1414065F47C606E015B1D8EE5053744742EA6,
+	FernPostProcessRenderPass_Execute_m49637507959E7BD781FEA182E9386ACCEBF62690,
+	FernPostProcessRenderer_get_visibleInSceneView_mEF708248FD8EE5BFDC3E276EE1EAC998A4DFBD8C,
+	FernPostProcessRenderer_get_input_m181B39A7858785E71A340C376347F0FD52108FC7,
+	FernPostProcessRenderer_get_Initialized_m3BABDEA0ABB85237FF99F31C1E40184761221174,
+	FernPostProcessRenderer_InitializeInternal_mDA1FA2E49C6BE10D4826A69A592B40AA28C85C09,
+	FernPostProcessRenderer_Initialize_m01EF80096CF1C90DD25B3276532E74554CCDB142,
+	FernPostProcessRenderer_Setup_m67C56CDB6922905F882A4C2BF73880B26AD8305E,
+	NULL,
+	FernPostProcessRenderer_Dispose_m6D7446632460A96AFCC7B20466D9CF20E1C9485D,
+	FernPostProcessRenderer_Dispose_m5F4CAF492076CBCBF6DC8C15915F4720DEF7F12D,
+	FernPostProcessRenderer_GetTempRTDescriptor_m72205506F10F481279541B32A2B89B4446C50547,
+	FernPostProcessRenderer__ctor_m92C409A4DC4E573C1012F9F78CFB9DF931394656,
+	FernPostProcessAttribute_get_Name_mDB6F30A93722F89CE734ECEB8E20562982EF4C78,
+	FernPostProcessAttribute_get_InjectionPoint_mD89DC66370D8D293A24C2DA12E4DC8693BFE4BDD,
+	FernPostProcessAttribute_get_ShareInstance_m48AC4B0940F5410653F62CDD2BACA8111AC0F4EE,
+	FernPostProcessAttribute__ctor_m83E151DE8567CDFE5C58E4E5DC38937A3CED5BBF,
+	FernPostProcessAttribute_GetAttribute_m75496FABB4AF731BB771EF04673CC1B790EA912A,
+	EdgeDetectionOutlineEffect__ctor_mC0B480FA930AF4CC773C1B41E2C048338C1500EA,
+	EdgeDetectionEffectRenderer_get_visibleInSceneView_m222B9658EBC3966CE820F0347B6A022A2CA33F36,
+	EdgeDetectionEffectRenderer_get_input_m7CFC38811244C7F44B0052FB5142966F5C78ED52,
+	EdgeDetectionEffectRenderer_Initialize_m0CA2FC6CE622E1D851F0242121F5C3731822C884,
+	EdgeDetectionEffectRenderer_Setup_m3498412627696D0F0350BEC8C65A2E22E652AD90,
+	EdgeDetectionEffectRenderer_Render_m38F95012E5899DBB95418C59944EDF369D3F59B0,
+	EdgeDetectionEffectRenderer__ctor_m721467324745BD5BE134613F8D76F01CED70EF65,
+	ShaderIDs__cctor_m439916B80C4E33749854EF77FD8270907F91A15D,
+};
+static const int32_t s_InvokerIndices[37] = 
+{
+	17447,
+	9710,
+	4298,
+	9710,
+	9710,
+	9430,
+	4023,
+	6896,
+	7674,
+	7674,
+	4298,
+	5454,
+	4396,
+	9430,
+	9507,
+	9430,
+	9710,
+	9710,
+	2652,
+	0,
+	7544,
+	9710,
+	16118,
+	9710,
+	9554,
+	9507,
+	9430,
+	2238,
+	16061,
+	9710,
+	9430,
+	9507,
+	9710,
+	2652,
+	429,
+	9710,
+	17420,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Fern_RenderPipelines_Universal_PostProcessing_Runtime_CodeGenModule;
+const Il2CppCodeGenModule g_Fern_RenderPipelines_Universal_PostProcessing_Runtime_CodeGenModule = 
+{
+	"Fern.RenderPipelines.Universal.PostProcessing.Runtime.dll",
+	37,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

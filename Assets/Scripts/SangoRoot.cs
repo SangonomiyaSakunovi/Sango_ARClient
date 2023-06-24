@@ -8,7 +8,7 @@ public class SangoRoot : MonoBehaviour
 {
     public static SangoRoot Instance = null;
 
-    
+
 
     void Start()
     {
@@ -58,6 +58,8 @@ public class SangoRoot : MonoBehaviour
 
     private void InitRequest()
     {
+        LoginRequest loginRequest = GetComponent<LoginRequest>();
+        loginRequest.InitRequset();
         DialogRequest dialogRequest = GetComponent<DialogRequest>();
         dialogRequest.InitRequset();
         ChatGPTRequest chatGPTRequest = GetComponent<ChatGPTRequest>();
@@ -85,6 +87,6 @@ public class SangoRoot : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-
+        NetService.Instance.CloseClientInstance();
     }
 }

@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
   m_UseScreenCoordOverride: 0
   m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
@@ -268,9 +269,12 @@ GameObject:
   - component: {fileID: 846739169}
   - component: {fileID: 846739168}
   - component: {fileID: 846739166}
+  - component: {fileID: 846739172}
   - component: {fileID: 846739165}
   - component: {fileID: 846739171}
   - component: {fileID: 846739170}
+  - component: {fileID: 846739174}
+  - component: {fileID: 846739173}
   m_Layer: 0
   m_Name: GameRoot
   m_TagString: Untagged
@@ -439,6 +443,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a44af8fd7189bf49989501d9e1df41f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &846739172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846739158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d42df7ce7511024aaf89ba0e66b8206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &846739173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846739158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e0444390fb5b8449ce51b3f391941f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &846739174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846739158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5bdfff52faeab49a5f2e18a025ae15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fontSize: 15
 --- !u!1 &1033057463
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +934,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1043,6 +1085,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260673071221558169, guid: dfd0ce8a3a51476418903677fddd6f67,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260673071221558169, guid: dfd0ce8a3a51476418903677fddd6f67,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260673071221558169, guid: dfd0ce8a3a51476418903677fddd6f67,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5076042059896204552, guid: dfd0ce8a3a51476418903677fddd6f67,
         type: 3}

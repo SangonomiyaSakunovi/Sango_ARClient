@@ -44,7 +44,7 @@ public class DialogSystem : BaseSystem
         historyChatGPTCompletionMessageInfoList.Add(currentMessage);
         ChatGPTCompletionReq chatGPTCompletionReq = new ChatGPTCompletionReq()
         {
-            model = ChatGTPNetConstant.ChatGPTCompletionModel,
+            model = ChatGPTConstant.ChatGPTCompletionModel,
             temperature = chatGPTAITemperature,
             messages = historyChatGPTCompletionMessageInfoList
         };
@@ -56,7 +56,7 @@ public class DialogSystem : BaseSystem
     {
         ChatGPTCompletionReq chatGPTCompletionReq = new ChatGPTCompletionReq()
         {
-            model = ChatGTPNetConstant.ChatGPTCompletionModel,
+            model = ChatGPTConstant.ChatGPTCompletionModel,
             temperature = chatGPTAITemperature,
             messages = new List<ChatGPTCompletionMessageInfo>
             {

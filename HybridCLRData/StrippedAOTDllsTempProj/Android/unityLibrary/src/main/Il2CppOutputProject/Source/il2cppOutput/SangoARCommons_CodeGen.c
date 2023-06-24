@@ -1,0 +1,171 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void EmbeddedAttribute__ctor_mCDC09845D0E97A61F712FE1629AEF8A342650B7D (void);
+extern void NullableAttribute__ctor_m23FA6BA1183B2F5992B258FCEB5D83392D3FFBC4 (void);
+extern void NullableAttribute__ctor_m62E8F6F6C306590E688BD60FAC640BB57C46F228 (void);
+extern void NullableContextAttribute__ctor_mA8EFCCFD6C46D3EDFDD44B77CD9CB570BCC8B772 (void);
+extern void DictTool_GetStringValue_m498CB8F280A71C66101EF26084BFF657BB2E42D6 (void);
+extern void DictTool_GetIntValue_mA20E3D1D113A0B50E7455770689BEAA5A24825EE (void);
+extern void DictTool_GetBoolValue_m56E3054A6E7E5B25E83A7F8438067AD23A11A72C (void);
+extern void DictTool__ctor_m950D85AD1094165CF7150A3C1431EF3037A0870E (void);
+extern void ChatGPTConstant__ctor_m2BC12CBA8D5A647BCBE9771B3D916A87456CFDE9 (void);
+extern void ChatGPTCompletionReq_get_model_mC1BF0DA7E8B4E878B395A706E46D2EC7211CCEF3 (void);
+extern void ChatGPTCompletionReq_set_model_mF0751E8140EC39FA9B7B65445A4E2FD892440BA0 (void);
+extern void ChatGPTCompletionReq_get_messages_mDB199510BB3733506F00A0866ACD7BB02F7CA148 (void);
+extern void ChatGPTCompletionReq_set_messages_m52A727A56D78D85CD4B8771EDDEEC218A64261A8 (void);
+extern void ChatGPTCompletionReq_get_temperature_mF46A4D9E8EAD0134AFDCE231640B56BEE3BA48B3 (void);
+extern void ChatGPTCompletionReq_set_temperature_m8E2F331B0A92B5F1093A495ECAAE4358026D7293 (void);
+extern void ChatGPTCompletionReq__ctor_m5C9B99F79713E83D0D553071FD25A6A605719FEF (void);
+extern void ChatGPTCompletionRsp_get_id_mE8E7FBEFBAE18BE70C43E93CD04CF63084D7F6D2 (void);
+extern void ChatGPTCompletionRsp_set_id_m872D1D428C5229D8F7E1FE716818C79F6DD738CA (void);
+extern void ChatGPTCompletionRsp_get_created_mB885A7AFCE996AC810B44BA8264A7AFD236F4821 (void);
+extern void ChatGPTCompletionRsp_set_created_m67BD74C6D03FD0082EFB217A87A571D00ECDB354 (void);
+extern void ChatGPTCompletionRsp_get_model_m4F3B00C333A531144190ABFF1CB1C6C6FD8B1A84 (void);
+extern void ChatGPTCompletionRsp_set_model_mB565226EF077538365942FC4CC374294D7452063 (void);
+extern void ChatGPTCompletionRsp_get_choices_m69A5F2349DD1BC18A93E0FDAE6AA50CE6AF1BFE2 (void);
+extern void ChatGPTCompletionRsp_set_choices_m0F4E9EB22442C0634AE575F21015B0567A09271C (void);
+extern void ChatGPTCompletionRsp__ctor_mB0A0A2F838149238F3A2242ECA93EFA04A3757AC (void);
+extern void ChatGPTCompletionRspChoiceInfo_get_message_m06FDCC85E531A735FBF34B38B901AEAD871C6341 (void);
+extern void ChatGPTCompletionRspChoiceInfo_set_message_mFB25C7834680D234542501F7E58ECBE87B2E1CBA (void);
+extern void ChatGPTCompletionRspChoiceInfo_get_finish_reason_mEC2F8DB4054F1086D5805E40FEB883C7B4FC896D (void);
+extern void ChatGPTCompletionRspChoiceInfo_set_finish_reason_m384A19D2B433EE2F06B29B3A7C9EA2EF7A80C70F (void);
+extern void ChatGPTCompletionRspChoiceInfo_get_index_mEB9EFBCA3F1B2168486C1E9B76BD35392FA1057D (void);
+extern void ChatGPTCompletionRspChoiceInfo_set_index_mAB692FCCD8CB621C57B6D4916A51C2B40472FFAD (void);
+extern void ChatGPTCompletionRspChoiceInfo__ctor_mBDAD5C65123D62559CFCAF8FDDBD616D1122323F (void);
+extern void ChatGPTCompletionMessageInfo_get_role_mB7002AF93FD8B2CE5460D2C75E2F15692BA263EF (void);
+extern void ChatGPTCompletionMessageInfo_set_role_mDD35BC97E2C8373A5520FA695BDCD9C0E78D243B (void);
+extern void ChatGPTCompletionMessageInfo_get_content_m6479966F50123AD217EC6FC8F0ACE149A644BA3C (void);
+extern void ChatGPTCompletionMessageInfo_set_content_m81084E25676FDC2EF8A6DB736F337EF643EF9F66 (void);
+extern void ChatGPTCompletionMessageInfo__ctor_m15654DF012E041DFA96A42C86B514C2B641E57B1 (void);
+static Il2CppMethodPointer s_methodPointers[38] = 
+{
+	EmbeddedAttribute__ctor_mCDC09845D0E97A61F712FE1629AEF8A342650B7D,
+	NullableAttribute__ctor_m23FA6BA1183B2F5992B258FCEB5D83392D3FFBC4,
+	NullableAttribute__ctor_m62E8F6F6C306590E688BD60FAC640BB57C46F228,
+	NullableContextAttribute__ctor_mA8EFCCFD6C46D3EDFDD44B77CD9CB570BCC8B772,
+	NULL,
+	DictTool_GetStringValue_m498CB8F280A71C66101EF26084BFF657BB2E42D6,
+	DictTool_GetIntValue_mA20E3D1D113A0B50E7455770689BEAA5A24825EE,
+	DictTool_GetBoolValue_m56E3054A6E7E5B25E83A7F8438067AD23A11A72C,
+	DictTool__ctor_m950D85AD1094165CF7150A3C1431EF3037A0870E,
+	ChatGPTConstant__ctor_m2BC12CBA8D5A647BCBE9771B3D916A87456CFDE9,
+	ChatGPTCompletionReq_get_model_mC1BF0DA7E8B4E878B395A706E46D2EC7211CCEF3,
+	ChatGPTCompletionReq_set_model_mF0751E8140EC39FA9B7B65445A4E2FD892440BA0,
+	ChatGPTCompletionReq_get_messages_mDB199510BB3733506F00A0866ACD7BB02F7CA148,
+	ChatGPTCompletionReq_set_messages_m52A727A56D78D85CD4B8771EDDEEC218A64261A8,
+	ChatGPTCompletionReq_get_temperature_mF46A4D9E8EAD0134AFDCE231640B56BEE3BA48B3,
+	ChatGPTCompletionReq_set_temperature_m8E2F331B0A92B5F1093A495ECAAE4358026D7293,
+	ChatGPTCompletionReq__ctor_m5C9B99F79713E83D0D553071FD25A6A605719FEF,
+	ChatGPTCompletionRsp_get_id_mE8E7FBEFBAE18BE70C43E93CD04CF63084D7F6D2,
+	ChatGPTCompletionRsp_set_id_m872D1D428C5229D8F7E1FE716818C79F6DD738CA,
+	ChatGPTCompletionRsp_get_created_mB885A7AFCE996AC810B44BA8264A7AFD236F4821,
+	ChatGPTCompletionRsp_set_created_m67BD74C6D03FD0082EFB217A87A571D00ECDB354,
+	ChatGPTCompletionRsp_get_model_m4F3B00C333A531144190ABFF1CB1C6C6FD8B1A84,
+	ChatGPTCompletionRsp_set_model_mB565226EF077538365942FC4CC374294D7452063,
+	ChatGPTCompletionRsp_get_choices_m69A5F2349DD1BC18A93E0FDAE6AA50CE6AF1BFE2,
+	ChatGPTCompletionRsp_set_choices_m0F4E9EB22442C0634AE575F21015B0567A09271C,
+	ChatGPTCompletionRsp__ctor_mB0A0A2F838149238F3A2242ECA93EFA04A3757AC,
+	ChatGPTCompletionRspChoiceInfo_get_message_m06FDCC85E531A735FBF34B38B901AEAD871C6341,
+	ChatGPTCompletionRspChoiceInfo_set_message_mFB25C7834680D234542501F7E58ECBE87B2E1CBA,
+	ChatGPTCompletionRspChoiceInfo_get_finish_reason_mEC2F8DB4054F1086D5805E40FEB883C7B4FC896D,
+	ChatGPTCompletionRspChoiceInfo_set_finish_reason_m384A19D2B433EE2F06B29B3A7C9EA2EF7A80C70F,
+	ChatGPTCompletionRspChoiceInfo_get_index_mEB9EFBCA3F1B2168486C1E9B76BD35392FA1057D,
+	ChatGPTCompletionRspChoiceInfo_set_index_mAB692FCCD8CB621C57B6D4916A51C2B40472FFAD,
+	ChatGPTCompletionRspChoiceInfo__ctor_mBDAD5C65123D62559CFCAF8FDDBD616D1122323F,
+	ChatGPTCompletionMessageInfo_get_role_mB7002AF93FD8B2CE5460D2C75E2F15692BA263EF,
+	ChatGPTCompletionMessageInfo_set_role_mDD35BC97E2C8373A5520FA695BDCD9C0E78D243B,
+	ChatGPTCompletionMessageInfo_get_content_m6479966F50123AD217EC6FC8F0ACE149A644BA3C,
+	ChatGPTCompletionMessageInfo_set_content_m81084E25676FDC2EF8A6DB736F337EF643EF9F66,
+	ChatGPTCompletionMessageInfo__ctor_m15654DF012E041DFA96A42C86B514C2B641E57B1,
+};
+static const int32_t s_InvokerIndices[38] = 
+{
+	9710,
+	7544,
+	7674,
+	7544,
+	0,
+	13944,
+	13802,
+	13518,
+	9710,
+	9710,
+	9554,
+	7674,
+	9554,
+	7674,
+	9625,
+	7742,
+	9710,
+	9554,
+	7674,
+	9507,
+	7629,
+	9554,
+	7674,
+	9554,
+	7674,
+	9710,
+	9554,
+	7674,
+	9554,
+	7674,
+	9507,
+	7629,
+	9710,
+	9554,
+	7674,
+	9554,
+	7674,
+	9710,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
+{
+	{ 0x06000005, { 0, 5 } },
+};
+extern const uint32_t g_rgctx_Dictionary_2_t90CADB57692834D0023F6B47C66F48659030EFCF;
+extern const uint32_t g_rgctx_T_Key_t7D120003AAC5D1D09B85F2CB6DA1371214F52181;
+extern const uint32_t g_rgctx_Dictionary_2_TryGetValue_m081C9A6BDCC373A22A933E9D1284FA88102389BC;
+extern const uint32_t g_rgctx_T_ValueU26_tEC857C578DAD7D6F6E204654928C5B96D6C9198A;
+extern const uint32_t g_rgctx_T_Value_tC2E163C5AD106CA96845DE08DCA800CF0B31E949;
+static const Il2CppRGCTXDefinition s_rgctxValues[5] = 
+{
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Dictionary_2_t90CADB57692834D0023F6B47C66F48659030EFCF },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_Key_t7D120003AAC5D1D09B85F2CB6DA1371214F52181 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Dictionary_2_TryGetValue_m081C9A6BDCC373A22A933E9D1284FA88102389BC },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_ValueU26_tEC857C578DAD7D6F6E204654928C5B96D6C9198A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_Value_tC2E163C5AD106CA96845DE08DCA800CF0B31E949 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_SangoARCommons_CodeGenModule;
+const Il2CppCodeGenModule g_SangoARCommons_CodeGenModule = 
+{
+	"SangoARCommons.dll",
+	38,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	1,
+	s_rgctxIndices,
+	5,
+	s_rgctxValues,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

@@ -1,8 +1,8 @@
+using SangoARCommons.Tools;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using SangoARCommons.Tools;
 
 //Developer : SangonomiyaSakunovi
 //Discription: The Resource Service.
@@ -18,7 +18,7 @@ public class ResourceService : MonoBehaviour
 
     public void InitService()
     {
-        Instance = this;        
+        Instance = this;
     }
 
     private void Update()
@@ -52,7 +52,7 @@ public class ResourceService : MonoBehaviour
 
     public AudioClip LoadAudioClip(string audioPath, bool isCache)
     {
-        AudioClip audioClip = DictTools.GetDictValue<string, AudioClip>(audioClipDict, audioPath);
+        AudioClip audioClip = DictTool.GetDictValue<string, AudioClip>(audioPath, audioClipDict);
         if (audioClip == null)
         {
             audioClip = Resources.Load<AudioClip>(audioPath);
@@ -66,7 +66,7 @@ public class ResourceService : MonoBehaviour
 
     public Sprite LoadSprite(string spritePath, bool isCache = false)
     {
-        Sprite sprite = DictTools.GetDictValue<string, Sprite>(spriteDict, spritePath);
+        Sprite sprite = DictTool.GetDictValue<string, Sprite>(spritePath, spriteDict);
         if (sprite == null)
         {
             sprite = Resources.Load<Sprite>(spritePath);

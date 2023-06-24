@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//Developer: SangonomiyaSakunovi
+
+public class Hello
+{
+    public static void Run()
+    {
+        Debug.Log("热更新测试脚本");
+    }
+}

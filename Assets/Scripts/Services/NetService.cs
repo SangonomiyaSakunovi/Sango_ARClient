@@ -1,12 +1,9 @@
-using Assets.Scripts.Services;
+using SangoARCommons.Constants;
+using SangoARNetProtocol;
+using SangoIOCPNet;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using SangoARCommons.Constants;
-using UnityEngine.Events;
-using SangoARCommons.Classs;
-using System.Text.Json;
-using System;
 
 //Developer : SangonomiyaSakunovi
 //Discription: The NetService.
@@ -15,27 +12,60 @@ public class NetService : MonoBehaviour
 {
     public static NetService Instance = null;
 
-    private IEnumerator asyncSendChatGPTCompletionRequestIEnumerator;
+    public IOCPPeer<ClientPeer> ClientInstance;
+    private int localIPPort = 52037;
+
+    private LoginRequest loginRequest;
 
     public void InitService()
     {
         string ipAddress = SetIPAddress(ConfigureModeCode.Offline);
         Instance = this;
+        InitClientInstance(ipAddress, localIPPort);
+        loginRequest = GetComponent<LoginRequest>();
     }
 
-    private string SetIPAddress(ConfigureModeCode mode)
+    private void InitClientInstance(string ipAddress, int localIPPort)
     {
-        string ipAddress = null;
-        if (mode == ConfigureModeCode.Online)
-        {
-            ipAddress = "124.220.20.98:5055";
-        }
-        else if (mode == ConfigureModeCode.Offline)
-        {
-            ipAddress = "127.0.0.1:5055";
-        }
-        return ipAddress;
+        ClientInstance = new IOCPPeer<ClientPeer>();
+        ClientInstance.InitClient(ipAddress, localIPPort);
+
+        IOCPLog.LogInfoCallBack = Debug.Log;
+        IOCPLog.LogWarningCallBack = Debug.LogWarning;
+        IOCPLog.LogErrorCallBack = Debug.LogError;
+        IOCPLog.LogDoneCallBack = Debug.Log;
+        IOCPLog.LogProcessingCallBack = Debug.Log;
     }
+
+    public void SendOperationRequest(OperationCode operationCode, MessageBody messageBody)
+    {
+        ClientInstance.ClientPeer.SendOperationRequest(operationCode, messageBody);
+    }
+
+    public void OnOperationResponse(SangoNetMessage sangoNetMessage)
+    {
+        switch (sangoNetMessage.MessageHead.OperationCode)
+        {
+            case OperationCode.Login:
+                {
+                    loginRequest.OnOperationResponse(sangoNetMessage);
+                }                   
+                break;
+            default:
+                {
+                    Debug.Log("找不到对应的OperationCode");
+                }
+                break;
+        }
+    }
+
+    public void CloseClientInstance()
+    {
+        ClientInstance.CloseClient();
+    }
+
+    #region ChatGPT
+    private IEnumerator asyncSendChatGPTCompletionRequestIEnumerator;
 
     public void AsyncSendChatGPTCompletionRequest(string chatGPTCompletionRequestJson)
     {
@@ -45,27 +75,41 @@ public class NetService : MonoBehaviour
 
     private IEnumerator AsyncOnChatGPTCompletionRequest(string chatGPTCompletionRequestJson)
     {
-        using (UnityWebRequest unityWebRequest = new UnityWebRequest(ChatGTPNetConstant.ChatGPTCompletionUrl, "POST"))
+        using (UnityWebRequest unityWebRequest = new UnityWebRequest(ChatGPTConstant.ChatGPTCompletionUrl, "POST"))
         {
             byte[] chatGPTCompletionRequestJsonByteData = System.Text.Encoding.UTF8.GetBytes(chatGPTCompletionRequestJson);
             unityWebRequest.uploadHandler = (UploadHandler)new UploadHandlerRaw(chatGPTCompletionRequestJsonByteData);
             unityWebRequest.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-            unityWebRequest.SetRequestHeader(ChatGTPNetConstant.ChatGPTRequestHeader1Key, ChatGTPNetConstant.ChatGPTRequestHeader1Value);
-            unityWebRequest.SetRequestHeader(ChatGTPNetConstant.ChatGPTRequestHeader2Key, ChatGTPNetConstant.ChatGPTRequestHeader2Value);
+            unityWebRequest.SetRequestHeader(ChatGPTConstant.ChatGPTRequestHeader1Key, ChatGPTConstant.ChatGPTRequestHeader1Value);
+            unityWebRequest.SetRequestHeader(ChatGPTConstant.ChatGPTRequestHeader2Key, ChatGPTConstant.ChatGPTRequestHeader2Value);
             yield return unityWebRequest.SendWebRequest();
 
             if (unityWebRequest.responseCode == 200)    //200 means get response; 404 means unfind; 500 means serverSelfBug
             {
                 string chatGPTCompletionResponseJson = unityWebRequest.downloadHandler.text;
                 if (chatGPTCompletionResponseJson != null)
-                {                   
+                {
                     DialogSystem.Instance.OnChatGPTDialogResponse(chatGPTCompletionResponseJson);
                 }
-                StopCoroutine(asyncSendChatGPTCompletionRequestIEnumerator);                
+                StopCoroutine(asyncSendChatGPTCompletionRequestIEnumerator);
             }
         }
     }
+    #endregion
 
+    private string SetIPAddress(ConfigureModeCode mode)
+    {
+        string ipAddress = null;
+        if (mode == ConfigureModeCode.Online)
+        {
+            ipAddress = "124.220.20.98";
+        }
+        else if (mode == ConfigureModeCode.Offline)
+        {
+            ipAddress = "127.0.0.1";
+        }
+        return ipAddress;
+    }
 
     private enum ConfigureModeCode
     {
